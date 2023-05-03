@@ -2,10 +2,10 @@
 
 ## Table of Contents
 * [Introduction](#introduction)
-    * [Week 01 - Hello World](#week-01---hello-world)
-    * [Week 02 - Bank](#week-02---bank)
-    * [Week 03 - Accounts](#week-03---accounts)
-    * [Week 04 - Collatz](#week-04---collatz)
+* [Analysis](#analysis)
+    * [Summary of Each Variable](#summary-of-each-variable)
+    * [Histogram of Each Variable](#histogram-of-each-variable)
+    * [Scatter Plot of Each Pair of Variable](#scatter-plot-of-each-pair-of-variables)
 * [Refrences](#refrences)
 * [Technologies](#technolgies)
 
@@ -16,7 +16,13 @@ Fisher's Iris data set is a well-known and widely used data set in the field of 
 
 Overall, Fisher's Iris data set is a well-known and valuable resource for researchers in the field of machine learning and statistics. Its simplicity and small size make it an ideal starting point for exploring classification algorithms and statistical techniques.
 
-### ***Week 01 - Hello World***
+## **Analysis**
+
+### ***Summary of Each Variable***
+
+### ***Histogram of Each Variable***
+
+### ***Scatter Plot of Each Pair of Variable***
 
 ## **Refrences**
 [1]: <https://en.wikipedia.org/wiki/Ronald_Fisher>
