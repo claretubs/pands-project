@@ -5,7 +5,7 @@
 * [Analysis](#analysis)
     * [Summary of Each Variable](#summary-of-each-variable)
     * [Histogram of Each Variable](#histogram-of-each-variable)
-    * [Scatter Plot of Each Pair of Variable](#scatter-plot-of-each-pair-of-variables)
+    * [Scatter Plot of Each Pair of Variable](#scatter-plot-of-each-pair-of-variable)
 * [Refrences](#refrences)
 * [Technologies](#technolgies)
 
