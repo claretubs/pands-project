@@ -39,11 +39,14 @@ By default, *.describe()* method returns a pandas dataframe. However, the *write
 - - - -
 
 ### ***Histogram of Each Variable***
-The next part of the program makes a histogram of each variable and saves them to PNG files. The *matplotlib.pyplot* module came into use in this section of the program. The program iterates over each column in the dataframe except the last one as that contains the target variable. The target variable is categorical, not continuous. 
+The next part of the program makes a histogram of each variable and saves them to PNG files. Histograms allow seeing the distribution of the data for various columns. The *matplotlib.pyplot* module came into use in this section of the program. The program iterates over each column in the dataframe except the last one as that contains the target variable. This is done by using [slicing][11]. The target variable is categorical, not continuous, therefore it cannot be made into a histogram. 
 
-The functions *title()*, *xlabel()* and *ylabel()* were taken from the *matplotlip.pyplot* library to label the plot. The x label for each plot was set to the current column from the dataset, while the y label was called *Fequency*.
+The *hist()* function from the *matplotlib.pyplot* library creates a histogram of the current column. An arguement is passed inside this function which specifies the number of [bins][12] to use for grouping the data. In this case bins is set to 10. 
 
- The fonts for all the [Labels](https://www.w3schools.com/python/matplotlib_labels.asp) were edited using the variables *font1* and *font2*. They set the style, size and colour of the font. A legend was made to help the user identify the histogram and function.
+The functions *title()*, *xlabel()* and *ylabel()* were taken from the *matplotlip.pyplot* library to label the plot. The x label for each plot was set to the current column from the dataset, while the y label was called *Fequency*. The fonts for all the [Labels][13] were edited using the variables *font1* and *font2*. They set the style, size and colour of the font. A legend was made to help the user identify the histogram and function.
+
+The *savefig()* function saves the histograms to PNG files. To ensure the files are saved to separate PNG files, the function *clf()* is used. The [clf][14] function is a pyplot module used to clear the current figure. This ensures the next figure is going onto a clear figure and is not overlapping previous data.
+
 - - - -
 
 ### ***Scatter Plot of Each Pair of Variable***
@@ -63,6 +66,10 @@ The functions *title()*, *xlabel()* and *ylabel()* were taken from the *matplotl
 [8]: <https://www.w3schools.com/python/pandas/ref_df_describe.asp>
 [9]: <https://www.freecodecamp.org/news/with-open-in-python-with-statement-syntax-example/>
 [10]: <https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.to_string.html>
+[11]: <https://stackoverflow.com/questions/15535205/what-does-1-mean-do-in-python>
+[12]: <https://stackoverflow.com/questions/33458566/how-to-choose-bins-in-matplotlib-histogram>
+[13]: <https://www.w3schools.com/python/matplotlib_labels.asp>
+[14]: <https://www.geeksforgeeks.org/matplotlib-pyplot-clf-in-python/>
 
 ## **Technologies**
   * Visual Studio Code - version 1.74.3
