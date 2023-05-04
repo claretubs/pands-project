@@ -33,7 +33,7 @@ The [With Open in Python][9] allows you to work with files by opening them. The 
 - 75% - The 75% percentile.
 - max - The maximum value.
 
-By default, *.describe()* method returns a pandas dataframe. However, the *write()* method expects a string as an input, not a pandas dataframe. Hence, [.to_string][10] method converts the pandas dataframe to a string format that can be written to a text file. 
+By default, *.describe()* method returns a pandas dataframe. However, the *write()* method expects a string as an input, not a pandas dataframe. Hence, [.to_string()][10] method converts the pandas dataframe to a string format that can be written to a text file. 
 
 ### ***Histogram of Each Variable***
 
