@@ -17,8 +17,23 @@ Fisher's Iris data set is a well-known and widely used data set in the field of 
 Overall, Fisher's Iris data set is a well-known and valuable resource for researchers in the field of machine learning and statistics. Its simplicity and small size make it an ideal starting point for exploring classification algorithms and statistical techniques.
 
 ## **Analysis**
-
 ### ***Summary of Each Variable***
+This program required two modules to be imported in order to carry out the analysis. These modules were *pandas* and *matplotlib.pyplot*. [Pandas][5] is a python library used for working with data sets. It helps analyze, clean, explore, and manipulate data. Pandas allows you to analyze big data and make conclusions based on statistcal theories, aswell as clean messy data sets, and make them readable. [Matplotlib][6] is a low level grpah plotting library in python that srevs as a visualization utility. Pandas is imported using the *pd* alias and matplotlib.pyplot is imported using the *plt* alias.
+
+Before the summary of each variable could be found, the data must first be loaded into the program. The data set is in CSV format, therefore, *.read_csv()* is used to read in the dataset and store it as a [dataframe obeject][7] in the variable *iris_data*.
+
+The [With Open in Python][9] allows you to work with files by opening them. The *open()* function must be used in conjunction with the *close()* function. However, the *with* statement closes the file for you without being told to. There are two parameters in the *open()* function - the filename and the mode. In this case, the mode is write. Once the data is loaded and opened in the program, it is now possible to get an overview of the values each column contains. This is done by using the *.describe()* function. The dataframe contains numerical data, thus, the [information displayed][8] for each column will be:
+
+- count - The number of not-empty values.
+- mean - The average (mean) value.
+- std - The standard deviation.
+- min - The minimum value.
+- 25% - The 25% percentile.
+- 50% - The 50% percentile.
+- 75% - The 75% percentile.
+- max - The maximum value.
+
+By default, *.describe()* method returns a pandas dataframe. However, the *write()* method expects a string as an input, not a pandas dataframe. Hence, [.to_string][10] method converts the pandas dataframe to a string format that can be written to a text file. 
 
 ### ***Histogram of Each Variable***
 
@@ -29,6 +44,12 @@ Overall, Fisher's Iris data set is a well-known and valuable resource for resear
 [2]: <https://en.wikipedia.org/wiki/Multivariate_statistics>
 [3]: <https://www.kaggle.com/datasets/arshid/iris-flower-dataset>
 [4]: <https://en.wikipedia.org/wiki/Iris_flower_data_set>
+[5]: <https://www.w3schools.com/python/pandas/pandas_intro.asp>
+[6]: <https://www.w3schools.com/python/matplotlib_intro.asp>
+[7]: <https://realpython.com/pandas-python-explore-dataset/#setting-up-your-environment>
+[8]: <https://www.w3schools.com/python/pandas/ref_df_describe.asp>
+[9]: <https://www.freecodecamp.org/news/with-open-in-python-with-statement-syntax-example/>
+[10]: <https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.to_string.html>
 
 ## **Technologies**
   * Visual Studio Code - version 1.74.3
