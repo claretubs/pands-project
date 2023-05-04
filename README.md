@@ -39,7 +39,11 @@ By default, *.describe()* method returns a pandas dataframe. However, the *write
 - - - -
 
 ### ***Histogram of Each Variable***
+The next part of the program makes a histogram of each variable and saves them to PNG files. The *matplotlib.pyplot* module came into use in this section of the program. The program iterates over each column in the dataframe except the last one as that contains the target variable. The target variable is categorical, not continuous. 
 
+The functions *title()*, *xlabel()* and *ylabel()* were taken from the *matplotlip.pyplot* library to label the plot. The x label for each plot was set to the current column from the dataset, while the y label was called *Fequency*.
+
+ The fonts for all the [Labels](https://www.w3schools.com/python/matplotlib_labels.asp) were edited using the variables *font1* and *font2*. They set the style, size and colour of the font. A legend was made to help the user identify the histogram and function.
 - - - -
 
 ### ***Scatter Plot of Each Pair of Variable***
