@@ -10,13 +10,13 @@ import matplotlib.pyplot as plt
 iris_data = pd.read_csv('iris.csv')
 
 # Summary of each variable to a single text file
-with open('iris_summary.txt', 'w') as f:
-    f.write(iris_data.describe().to_string())
+with open('iris_summary.txt', 'w') as f:            # Opens files without having to use the close() function
+    f.write(iris_data.describe().to_string())       # Converts summary data to a string and writes it to a .txt file
 
 # Histogram pf each variable to PNG files
-for col in iris_data.columns[:-1]:
-    plt.hist(iris_data[col], bins = 10)
-    plt.xlabel(col)
-    plt.ylabel('Frequency')
-    plt.savefig(f'{col}_histogram.png')
-    plt.clf()                            # Clears figure for the next plot
+for col in iris_data.columns[:-1]:                  # Iterates over each column in the dataframe except the last one
+    plt.hist(iris_data[col], bins = 10)             # Creates a histogram, with 10 bins, for each column
+    plt.xlabel(col)                                 # X label
+    plt.ylabel('Frequency')                         # Y label
+    plt.savefig(f'{col}_histogram.png')             # Saves histogram as a PNG file
+    plt.clf()                                       # Clears figure for the next plot
