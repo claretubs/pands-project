@@ -2,10 +2,11 @@
 
 ## Table of Contents
 * [Introduction](#introduction)
-* [Analysis](#analysis)
+* [Program](#program)
     * [Summary of Each Variable](#summary-of-each-variable)
     * [Histogram of Each Variable](#histogram-of-each-variable)
     * [Scatter Plot of Each Pair of Variable](#scatter-plot-of-each-pair-of-variable)
+* [Analysis](#Analysis)
 * [Refrences](#refrences)
 * [Technologies](#technolgies)
 
@@ -16,9 +17,9 @@ Fisher's Iris data set is a well-known and widely used data set in the field of 
 
 Overall, Fisher's Iris data set is a well-known and valuable resource for researchers in the field of machine learning and statistics. Its simplicity and small size make it an ideal starting point for exploring classification algorithms and statistical techniques.
 
-## **Analysis**
+## **Program**
 ### ***Summary of Each Variable***
-This program required two modules to be imported in order to carry out the analysis. These modules were *pandas* and *matplotlib.pyplot*. [Pandas][5] is a python library used for working with data sets. It helps analyze, clean, explore, and manipulate data. Pandas allows you to analyze big data and make conclusions based on statistcal theories, aswell as clean messy data sets, and make them readable. [Matplotlib][6] is a low level grpah plotting library in python that srevs as a visualization utility. Pandas is imported using the *pd* alias and matplotlib.pyplot is imported using the *plt* alias.
+This program required two modules to be imported in order to carry out the analysis. These modules were *pandas* and *matplotlib.pyplot*. [Pandas][5] is a python library used for working with data sets. It helps analyze, clean, explore, and manipulate data. Pandas allows you to analyze big data and make conclusions based on statistcal theories, aswell as clean messy data sets, and make them readable. [Matplotlib][6] is a low level graph plotting library in python that serves as a visualization utility. Pandas is imported using the *pd* alias and matplotlib.pyplot is imported using the *plt* alias.
 
 Before the summary of each variable could be found, the data must first be loaded into the program. The data set is in CSV format, therefore, *.read_csv()* is used to read in the dataset and store it as a [dataframe obeject][7] in the variable *iris_data*.
 
@@ -35,9 +36,17 @@ The [With Open in Python][9] allows you to work with files by opening them. The 
 
 By default, *.describe()* method returns a pandas dataframe. However, the *write()* method expects a string as an input, not a pandas dataframe. Hence, [.to_string()][10] method converts the pandas dataframe to a string format that can be written to a text file. 
 
+- - - -
+
 ### ***Histogram of Each Variable***
 
+- - - -
+
 ### ***Scatter Plot of Each Pair of Variable***
+
+- - - -
+
+## **Analysis**
 
 ## **Refrences**
 [1]: <https://en.wikipedia.org/wiki/Ronald_Fisher>
