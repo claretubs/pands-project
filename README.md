@@ -54,6 +54,12 @@ The *savefig()* function saves the histograms to PNG files. To ensure the files 
 - - - -
 
 ## **Analysis**
+There are number of qualities visiable in the histograms:
+- The highest frequency of the sepal length is between 25 and 30 which is between 5.5cm and 6cm.
+- The highest frequency of the sepal width is between 35 and 40 which is between 3.0cm and 3.5cm.
+- The highest frequency of the petal length is between 35 and 40 which is between 1cm and 2cm.
+- The highest frequency of the petal width is around 40 which is between 0.0cm and 0.5cm.
+
 
 ## **Refrences**
 [1]: <https://en.wikipedia.org/wiki/Ronald_Fisher>
