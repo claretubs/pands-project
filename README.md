@@ -56,6 +56,8 @@ The *scatterplot()* function draws a [scatter plot][17] with the possibility of 
 
 The legend makes the scatter plot more readable. The *bbox_to_anchor* parameter is a [box][19] that is used to position the legend in conjunction with the loc. It can be done using 2-tuple, or 4-tuble floats, in this case, the program is using 2-tuple (x,y). This type of tuple places the corner of the legend specified by loc as x,y. The loc is the location of the legend. The string *upper right* places the legend at the corresponding corner of the axis. The *show()* function then creates the scatterplot and makes it visible.
 
+The same code is used to get the petal scatter plot. The only difference is the x-axis is set to the petal length and the y-axis is set to the petal width. Instead of two different figures popping up at different times, both scatterplots appear as subplots. This allows the two scatter plots to be seen side by side.[Figs & Axes][20] is used to make the subplots. It allows *ax[0]* and *ax[1]* to be used anywhere in the code while defining limits,labels and legends. The parameters set inside the function [subplot()][21] were the number of rows, the number of columns and the size of the figure. There was 1 row with 2 columns. The [figure size][22] was choosen through trial and error. In this case the figure is 10 inches wide and 4 inches high. The [tight_layout()][23] function automatically adjusts the sapcing between the subplots. In order to tell the two scatterplots apart, a title was given to each plot using the *title()* function.
+
 - - - -
 
 ## **Analysis**
@@ -86,6 +88,10 @@ There are number of qualities visiable in the histograms:
 [17]: <https://seaborn.pydata.org/api.html>
 [18]: <https://seaborn.pydata.org/generated/seaborn.scatterplot.html>
 [19]: <https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.legend.html>
+[20]: <https://pub.towardsai.net/day-3-of-matplotlib-figure-axes-explained-in-detail-d6e98f7cd4e7>
+[21]: <https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.subplots.html>
+[22]: <https://www.geeksforgeeks.org/change-figure-size-in-pandas-python/>
+[23]: <https://www.geeksforgeeks.org/matplotlib-pyplot-tight_layout-in-python/>
 
 ## **Technologies**
   * Visual Studio Code - version 1.74.3

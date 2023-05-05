@@ -23,7 +23,7 @@ for col in iris_data.columns[:-1]:                      # Iterates over each col
     plt.clf()                                           # Clears figure for the next plot
 
 # Scatter plot of each pair of variables
-fig, axes = plt.subplots(1,2, figsize = (10,4))         # Create a figure with a 1x2 grid of subplots
+fig, axes = plt.subplots(1,2,figsize = (10,4))         # Create a figure with a 1x2 grid of subplots
 
 # Plot the first scatterplot in the first subplot
 sns.scatterplot(x = 'SepalLength', y = 'SepalWidth', 
@@ -38,4 +38,4 @@ axes[1].legend(bbox_to_anchor = (1,1), loc = 'upper left')
 axes[1].set_title('Petal Scatter Plot')
 
 plt.tight_layout()                                      # Adjust the spacing between subplots
-plt.show()                                              # Show the plot
+plt.savefig('Scatter_Plots')                            # Saves scatterplot as a PNG file
