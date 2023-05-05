@@ -41,9 +41,9 @@ By default, *.describe()* method returns a pandas dataframe. However, the *write
 ### ***Histogram of Each Variable***
 The next part of the program makes a histogram of each variable and saves them to PNG files. Histograms allow seeing the distribution of the data for various columns. The *matplotlib.pyplot* module came into use in this section of the program. The program iterates over each column in the dataframe except the last one as that contains the target variable. This is done by using [slicing][11]. The target variable is categorical, not continuous, therefore it cannot be made into a histogram. 
 
-The *hist()* function from the *matplotlib.pyplot* library creates a histogram of the current column. An arguement is passed inside this function which specifies the number of [bins][12] to use for grouping the data. In this case bins is set to 10. 
+The *hist()* function from the *matplotlib.pyplot* library creates a histogram of the current column. An arguement is passed inside this function which specifies the number of [bins][12] to use for grouping the data. In this case bins is set to 8. It was quite difficult to distingush between the different bins, therefore the [edge][15] of each histogram is set to black to make it easier to read.
 
-The functions *title()*, *xlabel()* and *ylabel()* were taken from the *matplotlip.pyplot* library to label the plot. The x label for each plot was set to the current column from the dataset, while the y label was called *Fequency*. The fonts for all the [Labels][13] were edited using the variables *font1* and *font2*. They set the style, size and colour of the font. A legend was made to help the user identify the histogram and function.
+The functions *xlabel()* and *ylabel()* were taken from the *matplotlip.pyplot* library to label the plot. The x label for each plot was set to the current column from the dataset, while the y label was called *Fequency*. The fonts for all the [Labels][13] were edited using the variables *font1* and *font2*. They set the style, size and colour of the font.
 
 The *savefig()* function saves the histograms to PNG files. To ensure the files are saved to separate PNG files, the function *clf()* is used. The [clf][14] function is a pyplot module used to clear the current figure. This ensures the next figure is going onto a clear figure and is not overlapping previous data.
 
@@ -55,10 +55,10 @@ The *savefig()* function saves the histograms to PNG files. To ensure the files 
 
 ## **Analysis**
 There are number of qualities visiable in the histograms:
-- The highest frequency of the sepal length is between 25 and 30 which is between 5.5cm and 6cm.
-- The highest frequency of the sepal width is between 35 and 40 which is between 3.0cm and 3.5cm.
-- The highest frequency of the petal length is between 35 and 40 which is between 1cm and 2cm.
-- The highest frequency of the petal width is around 40 which is between 0.0cm and 0.5cm.
+- The highest frequency of the sepal length is between 30 and 35 which is between 6cm and 6.5cm.
+- The highest frequency of the sepal width is between 35 and 40 which is roughly between 2.6cm and 3.25cm.
+- The highest frequency of the petal length is between 45 and 50 which is between 1cm and 2cm.
+- The highest frequency of the petal width is around 40 which is roughly between 0.1cm and 0.4cm.
 
 
 ## **Refrences**
@@ -76,6 +76,7 @@ There are number of qualities visiable in the histograms:
 [12]: <https://stackoverflow.com/questions/33458566/how-to-choose-bins-in-matplotlib-histogram>
 [13]: <https://www.w3schools.com/python/matplotlib_labels.asp>
 [14]: <https://www.geeksforgeeks.org/matplotlib-pyplot-clf-in-python/>
+[15]: <https://datagy.io/histogram-python/>
 
 ## **Technologies**
   * Visual Studio Code - version 1.74.3
