@@ -54,7 +54,7 @@ This part of the program makes a scatter plot of each pair of variables. It show
 
 The *scatterplot()* function draws a [scatter plot][17] with the possibility of several semantic groupings. Within this function the x-axis is set to the sepal length and the y-axis is set to the sepal width. The [hue][18] was also set inside the *scatterplot()* function. Hue is the grouping varaible that will produce points with different colors. It can either be categorical or numeric. In this case, the groupings were Iris-setosa, Iris-versicolor and Iris-virginica. Finally, the data structure is input through the *data* parameter.
 
-The legend makes the scatter plot more readable. The *bbox_to_anchor* parameter is a [box][19] that is used to position the legend in conjunction with the loc. It can be done using 2-tuple, or 4-tuble floats, in this case, the program is using 2-tuple (x,y). This type of tuple places the corner of the legend specified by loc as x,y. The loc is the location of the legend. The string *upper_right* places the legend at the corresponding corner of the axis. The *show()* function then creates the scatterplot and makes it visible.
+The legend makes the scatter plot more readable. The *bbox_to_anchor* parameter is a [box][19] that is used to position the legend in conjunction with the loc. It can be done using 2-tuple, or 4-tuble floats, in this case, the program is using 2-tuple (x,y). This type of tuple places the corner of the legend specified by loc as x,y. The loc is the location of the legend. The string *upper right* places the legend at the corresponding corner of the axis. The *show()* function then creates the scatterplot and makes it visible.
 
 - - - -
 
