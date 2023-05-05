@@ -15,7 +15,7 @@ with open('iris_summary.txt', 'w') as f:            # Opens files without having
 
 # Histogram pf each variable to PNG files
 for col in iris_data.columns[:-1]:                  # Iterates over each column in the dataframe except the last one
-    plt.hist(iris_data[col], bins = 10)             # Creates a histogram, with 10 bins, for each column
+    plt.hist(iris_data[col], bins = 8, color = 'green', edgecolor = 'black')   # Creates a histogram, with 10 bins, for each column
     plt.xlabel(col)                                 # X label
     plt.ylabel('Frequency')                         # Y label
     plt.savefig(f'{col}_histogram.png')             # Saves histogram as a PNG file
