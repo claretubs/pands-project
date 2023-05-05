@@ -25,5 +25,5 @@ for col in iris_data.columns[:-1]:                  # Iterates over each column 
 # Scatter plot of each pair of variables
 sns.scatterplot(x = 'SepalLength', y = 'SepalWidth', 
                 hue = 'Species', data = iris_data)
-plt.legend(bbox_to_anchor = (1,1), loc = 'best')
+plt.legend(bbox_to_anchor = (1,1), loc = 'upper right')
 plt.show()
