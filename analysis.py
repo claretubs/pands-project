@@ -5,6 +5,7 @@
 
 import pandas as pd
 import matplotlib.pyplot as plt
+import seaborn as sns
 
 # Loads the Iris dataset from a CSV file
 iris_data = pd.read_csv('iris.csv')
@@ -20,3 +21,9 @@ for col in iris_data.columns[:-1]:                  # Iterates over each column 
     plt.ylabel('Frequency')                         # Y label
     plt.savefig(f'{col}_histogram.png')             # Saves histogram as a PNG file
     plt.clf()                                       # Clears figure for the next plot
+
+# Scatter plot of each pair of variables
+sns.scatterplot(x = 'SepalLength', y = 'SepalWidth', 
+                hue = 'Species', data = iris_data)
+plt.legend(bbox_to_anchor = (1,1), loc = 'best')
+plt.show()
