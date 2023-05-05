@@ -50,6 +50,11 @@ The *savefig()* function saves the histograms to PNG files. To ensure the files 
 - - - -
 
 ### ***Scatter Plot of Each Pair of Variable***
+This part of the program makes a scatter plot of each pair of variables. It shows the relationship between the sepal length and sepal width, and also between the petal length and petal width. The program begins with the comparison of the sepal length and sepal width. The program required an extra module to be imported in order to carry out the analysis. The module is *seaborn*, imported using the *sns* alias. [Seaborn][16] is a data visualization library based on matplotlib. It builds on top of matplotlib and integrates closely with pandas data structures. It provides a high-level interface for drawing attractive and informative statistical graphics, and helps explore and understand the data.
+
+The *scatterplot()* function draws a [scatter plot][17] with the possibility of several semantic groupings. Within this function the x-axis is set to the sepal length and the y-axis is set to the sepal width. The [hue][18] was also set inside the *scatterplot()* function. Hue is the grouping varaible that will produce points with different colors. It can either be categorical or numeric. In this case, the groupings were Iris-setosa, Iris-versicolor and Iris-virginica. Finally, the data structure is input through the *data* parameter.
+
+The legend makes the scatter plot more readable. The *bbox_to_anchor* parameter is a [box][19] that is used to position the legend in conjunction with the loc. It can be done using 2-tuple, or 4-tuble floats, in this case, the program is using 2-tuple (x,y). This type of tuple places the corner of the legend specified by loc as x,y. The loc is the location of the legend. The string *upper_right* places the legend at the corresponding corner of the axis. The *show()* function then creates the scatterplot and makes it visible.
 
 - - - -
 
@@ -77,6 +82,10 @@ There are number of qualities visiable in the histograms:
 [13]: <https://www.w3schools.com/python/matplotlib_labels.asp>
 [14]: <https://www.geeksforgeeks.org/matplotlib-pyplot-clf-in-python/>
 [15]: <https://datagy.io/histogram-python/>
+[16]: <https://seaborn.pydata.org/>
+[17]: <https://seaborn.pydata.org/api.html>
+[18]: <https://seaborn.pydata.org/generated/seaborn.scatterplot.html>
+[19]: <https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.legend.html>
 
 ## **Technologies**
   * Visual Studio Code - version 1.74.3
