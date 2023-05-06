@@ -61,11 +61,15 @@ The same code is used to get the petal scatter plot. The only difference is the 
 - - - -
 
 ## **Analysis**
+The summary of the data in the text file allows us to see the count of each column, average value, standard divation, minimum and maximum values. 
+
 There are number of qualities visiable in the histograms:
 - The highest frequency of the sepal length is between 30 and 35 which is between 6cm and 6.5cm.
 - The highest frequency of the sepal width is between 35 and 40 which is roughly between 2.6cm and 3.25cm.
 - The highest frequency of the petal length is between 45 and 50 which is between 1cm and 2cm.
 - The highest frequency of the petal width is around 40 which is roughly between 0.1cm and 0.4cm.
+
+![Scatter Plots of each Pair Varaible](Scatter_Plots.png "Scatter Plots")
 
 
 ## **Refrences**
