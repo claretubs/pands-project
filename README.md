@@ -7,6 +7,9 @@
     * [Histogram of Each Variable](#histogram-of-each-variable)
     * [Scatter Plot of Each Pair of Variable](#scatter-plot-of-each-pair-of-variable)
 * [Analysis](#Analysis)
+    * [Summary of Data](#summary-of-data)
+    * [Histograms](#histograms)
+    * [Scatter Plot](#scatter-plot)
 * [Refrences](#refrences)
 * [Technologies](#technolgies)
 
@@ -61,13 +64,21 @@ The same code is used to get the petal scatter plot. The only difference is the 
 - - - -
 
 ## **Analysis**
+### ***Summary of Data***
 The summary of the data in the [text file][24] allows us to see the count of each column, average value, standard divation, minimum and maximum values. 
 
+- - - -
+
+### ***Histograms***
 There are number of qualities visiable in the histograms:
 - The highest frequency of the sepal length is between 30 and 35 which is between 6cm and 6.5cm.
 - The highest frequency of the sepal width is between 35 and 40 which is roughly between 2.6cm and 3.25cm.
 - The highest frequency of the petal length is between 45 and 50 which is between 1cm and 2cm.
 - The highest frequency of the petal width is around 40 which is roughly between 0.1cm and 0.4cm.
+
+- - - -
+
+### ***Scatter Plot***
 
 ![Scatter Plots of each Pair Varaible](Scatter_Plots.png "Scatter Plots")
 
@@ -85,6 +96,8 @@ It can also be seen from the plot above, labeled "Petal Scatter Plot" that:
 - Finally, the species VIrginica has the largest petal lengths and widths.
 
 Now let us discuss what this data may mean.
+
+- - - -
 
 ## **Refrences**
 [1]: <https://en.wikipedia.org/wiki/Ronald_Fisher>
