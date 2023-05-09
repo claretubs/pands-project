@@ -6,10 +6,12 @@
     * [Summary of Each Variable](#summary-of-each-variable)
     * [Histogram of Each Variable](#histogram-of-each-variable)
     * [Scatter Plot of Each Pair of Variable](#scatter-plot-of-each-pair-of-variable)
+    * [Box Plot of Each Variable](#box-plot-of-each-variable)
 * [Analysis](#Analysis)
     * [Summary of Data](#summary-of-data)
     * [Histograms](#histograms)
     * [Scatter Plot](#scatter-plot)
+    * [Box Plot](#box-plot)
 * [Technical Information](#technical-information)
 * [Refrences](#refrences)
 
@@ -63,6 +65,10 @@ The same code is used to get the petal scatter plot. The only difference is the 
 
 - - - -
 
+### ***Box Plot of Each Variable***
+
+- - - -
+
 ## **Analysis**
 ### ***Summary of Data***
 The summary of the data in the [text file][24] allows us to see the count of each column, average value, standard divation, minimum and maximum values. It generates an understanding of the range of data being reviewed. There are 150 rows in this dataset with 5 columns. Each of the columns in the text file allows us to see how the data is distributed. The first column, sepal length, ranges from 4.3cm to 7.9cm. Then the sepal width ranges from 2cm to 4.4cm, petal length ranges from 1cm to 6.9cm, and finally petal width ranges from 0.1cm to 2.5cm. 
@@ -97,9 +103,17 @@ It can also be seen from the plot above, labeled "Petal Scatter Plot" that:
 - Once again, the species Versicolor lies in the middle of the other two species in terms of petal length and petal width.
 - Finally, the species VIrginica has the largest petal lengths and widths.
 
-Now let us discuss what this data may mean.
+### Box Plot***
+A [box plot][25] is a type of chart used in explanatory data analysis. They visually show the distribution of numerical data and skewness by displaying the data quartiles, otherwise known as the percentiles, and averages. Box plots divide the data into sections containing approximately 25% of the data in the set. In other words, they can provide a visual summary of the data. This makes it easier for the viewer to identify the mean values, the dispersion of the data set, and the signs of skewness. 
+
+![Box Plot of each Varaible](Box_Plot.png "Box Plot")
+
+The box plots for the Iris dataset are shown above. The sepal width seems to have a normal distribution. Outliers can be seen in the box plot for the sepal width also. The median is in the middle of the box, and the whiskers are about the same on both sides of the box. This means the distribution is symmetric. The sepal length is close to having a normal distribution. However the petal length and petal width are both negatively skewed (skewed left). The median is closer to the top of the box and the whiskers is shorter on the upper end of the box. 
+
+The medians of each of the box plots vastly differ from eachother. The sepal length median lies outside the petal length box and the same can be said for the sepal width and petal width. The petal length has the longest box meaning the data is more dispersed in this variable than in any other variable. Sepal width has the least dispersion in data.
 
 - - - -
+
 ## **Technical Information**
 ### ***Language:***
 - Python 3.10.9
@@ -141,3 +155,4 @@ Now let us discuss what this data may mean.
 [22]: <https://www.geeksforgeeks.org/change-figure-size-in-pandas-python/>
 [23]: <https://www.geeksforgeeks.org/matplotlib-pyplot-tight_layout-in-python/>
 [24]: <iris_summary.txt>
+[25]: <https://www.simplypsychology.org/boxplots.html#:~:text=In%20descriptive%20statistics%2C%20a%20box%20plot%20or%20boxplot,displaying%20the%20data%20quartiles%20%28or%20percentiles%29%20and%20averages.>
