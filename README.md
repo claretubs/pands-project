@@ -66,6 +66,7 @@ The same code is used to get the petal scatter plot. The only difference is the 
 - - - -
 
 ### ***Box Plot of Each Variable***
+This part of the program makes a box plot of each of the variables. Intially, it creates a new figure with a specified size. The method of this has been explained in the previous section. The [boxplot()][28] function takes data from the data set and creates a box plot of the variables. The x-axis donates the data to be plotted while the y-axis shows the frequency distribution. When the box plot has been created it is saved to a PNG file.
 
 - - - -
 
@@ -168,3 +169,4 @@ The medians of each of the box plots vastly differ from eachother. The sepal len
 [25]: <https://www.simplypsychology.org/boxplots.html#:~:text=In%20descriptive%20statistics%2C%20a%20box%20plot%20or%20boxplot,displaying%20the%20data%20quartiles%20%28or%20percentiles%29%20and%20averages.>
 [26]: <https://chartio.com/learn/charts/what-is-a-scatter-plot/>
 [27]: <https://chartio.com/learn/charts/histogram-complete-guide/>
+[28]: <https://www.geeksforgeeks.org/box-plot-in-python-using-matplotlib/>
