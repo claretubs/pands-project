@@ -104,7 +104,7 @@ It can also be seen from the plot above, labeled "Petal Scatter Plot" that:
 - Once again, the species Versicolor lies in the middle of the other two species in terms of petal length and petal width. It has a strong, positive, linear correlation.
 - Finally, the species VIrginica has the largest petal lengths and widths. It has a moderate, positive, linear correlation.
 
-### Box Plot***
+### ***Box Plot***
 A [box plot][25] is a type of chart used in explanatory data analysis. They visually show the distribution of numerical data and skewness by displaying the data quartiles, otherwise known as the percentiles, and averages. Box plots divide the data into sections containing approximately 25% of the data in the set. In other words, they can provide a visual summary of the data. This makes it easier for the viewer to identify the mean values, the dispersion of the data set, and the signs of skewness. 
 
 ![Box Plot of each Varaible](Box_Plot.png "Box Plot")
