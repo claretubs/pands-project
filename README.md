@@ -78,11 +78,21 @@ As the three different species are all joined together in this summary, the resu
 - - - -
 
 ### ***Histograms***
+A [histogram][27] is a chart that plots the distribution of numeric variables values as a series of bars. Each bar typically covers a range of numeric values called a bin or class. The bars height indicates the frequency of data points with a value within the corresponding bin. Histograms are usually good for showing the general distributional features of dataset variables. Allows the user to see where the peaks of the distribution are and whether the data is skewed or symmetric. 
+
+![Histogram of Sepal Length](SepalLength_histogram.png "Histogram of Sepal Length")
+
+![Histogram of Sepal Width](SepalWidth_histogram.png "Histogram of Sepal Width")
+
+![Histogram of Petal Length](PetalLength_histogram.png "Histogram of Petal Length")
+
+![Histogram of Petal Width](PetalWidth_histogram.png "Histogram of Petal Width")
+
 There are number of qualities visiable in the histograms:
-- The highest frequency of the sepal length is between 30 and 35 which is between 6cm and 6.5cm.
-- The highest frequency of the sepal width is between 35 and 40 which is roughly between 2.6cm and 3.25cm.
-- The highest frequency of the petal length is between 45 and 50 which is between 1cm and 2cm.
-- The highest frequency of the petal width is around 40 which is roughly between 0.1cm and 0.4cm.
+- The highest frequency of the sepal length is between 30 and 35 which is between 6cm and 6.5cm. The sepal length distribution is skewed a little to the right. 
+- The highest frequency of the sepal width is between 35 and 40 which is roughly between 2.6cm and 3.25cm. The sepal width has close to a symmetric (unimodal) distribution.
+- The highest frequency of the petal length is between 45 and 50 which is between 1cm and 2cm. The distribution in this data seems to be bimodal. This means that there is not a single data value that occurs with the highest frequency. Instead, there are two data values that tie for having the highest frequency.
+- The highest frequency of the petal width is around 40 which is roughly between 0.1cm and 0.4cm. The distribution in this data also seems to be bimodal.
 
 - - - -
 
@@ -158,3 +168,4 @@ The medians of each of the box plots vastly differ from eachother. The sepal len
 [24]: <iris_summary.txt>
 [25]: <https://www.simplypsychology.org/boxplots.html#:~:text=In%20descriptive%20statistics%2C%20a%20box%20plot%20or%20boxplot,displaying%20the%20data%20quartiles%20%28or%20percentiles%29%20and%20averages.>
 [26]: <https://chartio.com/learn/charts/what-is-a-scatter-plot/>
+[27]: <https://chartio.com/learn/charts/histogram-complete-guide/>
