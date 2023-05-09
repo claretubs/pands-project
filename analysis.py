@@ -44,8 +44,8 @@ plt.tight_layout()                                      # Adjust the spacing bet
 plt.savefig('Scatter_Plots')                            # Saves scatterplot as a PNG file
 
 # Box Plot of variables
-fig2, ax2 = plt.subplots(figsize=(8, 6))       # Create a new figure with a specified size
-iris_data.boxplot(ax=ax2)                       # Create the boxplot on the specified figure
-ax2.set_title('Box plot of the Fisher\'s Iris dataset')
-ax2.set_ylabel('Value')
-plt.savefig('Box_Plot')                            # Saves box plot as a PNG file
+fig2, ax2 = plt.subplots(figsize=(8, 6))                # Create a new figure with a specified size
+iris_data.boxplot(ax=ax2)                               # Create the boxplot on the specified figure
+ax2.set_title('Box plot of the Fisher\'s Iris dataset') # Set title
+ax2.set_ylabel('Value')                                 # Set y axis
+plt.savefig('Box_Plot')                                 # Saves box plot as a PNG file
