@@ -87,21 +87,22 @@ There are number of qualities visiable in the histograms:
 - - - -
 
 ### ***Scatter Plot***
+[Scatter plots][26] use dots to represent values for two different numeric values. The values for each individual data point are represented by the position of each dot on the horizontal and vertical axis. These types of plots are usually used to observe the relationship between variables.
 
 ![Scatter Plots of each Pair Varaible](Scatter_Plots.png "Scatter Plots")
 
-It can be seen from the plot above, labeled "Sepal Scatter Plot" that:
+The two scatter plots from the iris dataset are shown above. Each points horizontal position in the first scatter plot indicates the sepal length in centimeters and the vertical position indicates the sepal width. The sach points horizontal position in the second scatter plot indicates the petal length in centimeters and the vertical position indicates the petal width. It can be seen from the plot above, labeled "Sepal Scatter Plot" that:
 
-- The species Setosa has noticably smaller sepal lengths, however, the sepal widths are much larger.
-- The species Virginica has the largest sepal lengths overall but small sepal widths.
+- The species Setosa has noticably smaller sepal lengths, however, the sepal widths are much larger. It has a moderate, positive, linear correlation.
+- The species Virginica has the largest sepal lengths overall but small sepal widths. There are alot of gaps in the data values to be seen in the scatter plot. This species has noticable outliers also.
 - The species Veriscolor has sepal lengths and widths inbetween the other two sepcies. 
 
 It can also be seen from the plot above, labeled "Petal Scatter Plot" that:
 
 - The petal lengths and widths are far more seperated between the different species.
 - The species Setosa has very small petal lengths and widths in comparison to the other two species.
-- Once again, the species Versicolor lies in the middle of the other two species in terms of petal length and petal width.
-- Finally, the species VIrginica has the largest petal lengths and widths.
+- Once again, the species Versicolor lies in the middle of the other two species in terms of petal length and petal width. It has a strong, positive, linear correlation.
+- Finally, the species VIrginica has the largest petal lengths and widths. It has a moderate, positive, linear correlation.
 
 ### Box Plot***
 A [box plot][25] is a type of chart used in explanatory data analysis. They visually show the distribution of numerical data and skewness by displaying the data quartiles, otherwise known as the percentiles, and averages. Box plots divide the data into sections containing approximately 25% of the data in the set. In other words, they can provide a visual summary of the data. This makes it easier for the viewer to identify the mean values, the dispersion of the data set, and the signs of skewness. 
@@ -156,3 +157,4 @@ The medians of each of the box plots vastly differ from eachother. The sepal len
 [23]: <https://www.geeksforgeeks.org/matplotlib-pyplot-tight_layout-in-python/>
 [24]: <iris_summary.txt>
 [25]: <https://www.simplypsychology.org/boxplots.html#:~:text=In%20descriptive%20statistics%2C%20a%20box%20plot%20or%20boxplot,displaying%20the%20data%20quartiles%20%28or%20percentiles%29%20and%20averages.>
+[26]: <https://chartio.com/learn/charts/what-is-a-scatter-plot/>
