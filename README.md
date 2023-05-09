@@ -65,7 +65,9 @@ The same code is used to get the petal scatter plot. The only difference is the 
 
 ## **Analysis**
 ### ***Summary of Data***
-The summary of the data in the [text file][24] allows us to see the count of each column, average value, standard divation, minimum and maximum values. It generates an understanding of the range of data being reviewed. There are 150 rows in this dataset with 5 columns. Each of the columns in the text file allows us to see how the data is distributed. The first column, sepal length, ranges from 4.3cm to 7.9cm. Then the sepal width ranges from 2cm to 4.4cm, petal length ranges from 1cm to 6.9cm, and finally petal width ranges from 0.1cm to 2.5cm. As the three different species are all joined together in this summary, the results may not be an accurate discription of each species used. A possible resolution to this problem is splitting the data into its sepearate species.
+The summary of the data in the [text file][24] allows us to see the count of each column, average value, standard divation, minimum and maximum values. It generates an understanding of the range of data being reviewed. There are 150 rows in this dataset with 5 columns. Each of the columns in the text file allows us to see how the data is distributed. The first column, sepal length, ranges from 4.3cm to 7.9cm. Then the sepal width ranges from 2cm to 4.4cm, petal length ranges from 1cm to 6.9cm, and finally petal width ranges from 0.1cm to 2.5cm. 
+
+As the three different species are all joined together in this summary, the results may not be an accurate discription of each species used. A possible resolution to this problem is splitting the data into its sepearate species.
 
 - - - -
 
